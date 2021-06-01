@@ -3,7 +3,7 @@ module C = Configurator.V1
 let () =
   C.main ~name:"hidapi" begin fun c ->
     let default : C.Pkg_config.package_conf =
-      { libs   = ["-lhidapi"]
+      { libs   = ["-lhidapi-libusb"]
       ; cflags = ["-I/usr/include/hidapi"]
       }
     in
